@@ -1,0 +1,37 @@
+/* pages/zidong/zidong.wxss */
+
+.progress-box {
+  margin-top: 20px;
+}
+
+.progress {
+  width: 100%;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* 调整图标和文字之间的间隔 */
+  margin-bottom: 50px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.text-line {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  white-space: normal; /* 允许文本换行 */
+}
+
+button.btn {
+  background-color: #10AEFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}

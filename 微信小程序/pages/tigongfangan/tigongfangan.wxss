@@ -1,0 +1,176 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.nav-item {
+  width: 25%;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.scroll_box {
+  background-color: transparent;
+  width: 100%;
+  height: 500rpx;
+  overflow: hidden;
+  padding: 20rpx;
+  white-space: nowrap;
+}
+.scroll_box scroll-view {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+.item_list {
+  height: 100%;
+  margin-right: 23rpx;
+  display: inline-block;
+  margin-left: 10px;
+}
+.item_list image {
+  border-radius: 20px; /* 给图片添加圆角 */
+}
+
+.right {
+  position: absolute;
+  right: 10px;
+  color: #999999;
+}
+/* 整体列表容器样式 */
+.sees {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea; /* 添加底部边界线 */
+  background-color: transparent;
+}
+/* 图片和 checkbox 容器样式 */
+.img-checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* 设置与描述文字之间的间距 */
+}
+/* 图片样式 */
+.sees image {
+  width: 75px;
+  height: 58px;
+  border-radius: 4px; /* 给图片添加圆角 */
+  margin-right: 12px; /* 设置与 checkbox 之间的间距 */
+}
+/* 描述区域样式 */
+.desc {
+  flex: 1;
+}
+/* 标题样式 */
+.title {
+  font-size: 16px;
+  color: #ffd700;
+  margin-bottom: 5px; /* 设置标题和类型之间的间距 */
+}
+/* 浏览和评论容器样式 */
+.count {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+}
+/* 浏览和评论文字样式 */
+.count view {
+  margin-right: 10px; /* 设置浏览和评论之间的间距 */
+}
+
+/* 浏览数样式 */
+.look {
+  color: #999; /* 浏览数颜色 */
+}
+
+/* 评论数样式 */
+.say {
+  color: #999; /* 评论数颜色 */
+}
+
+.search-bar {
+  position: relative;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.search-input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.search-bar {
+  margin-bottom: 40px; /* 适当调整间距大小 */
+}
+.search-icon {
+  width: 20px; /* 设置图片宽度为20像素 */
+  height: 20px; /* 设置图片高度为20像素 */
+}
+
+swiper image {
+  width: 320px; /* 设置图片宽度为200像素 */
+  height: 200px; /* 设置图片高度为200像素 */
+}
+.item_block {
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 10px; /* Space between items */
+}
+
+.sees {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.slider_container {
+  display: flex;
+  align-items: center; /* 确保滑块和单位垂直居中对齐 */
+  padding: 10px 0; /* 在滑块周围添加一些内边距 */
+}
+
+.slider_container slider {
+  flex: 0 0 70%; /* 设置滑块的基础长度为容器宽度的50%，不允许滑块伸缩 */
+}
+
+.ml_label {
+  white-space: nowrap; /* 防止单位标签换行 */
+  padding-left: 5px; /* 在滑块和单位标签之间添加一些空间 */
+  font-size: 14px; /* 设定字体大小，可以根据实际需要调整 */
+  color: #666; /* 可选：设置单位标签的颜色 */
+}
+
+/* 自定义 checkbox 样式 */
+.custom-checkbox {
+  margin-left: 10px; /* 在 checkbox 和图片之间添加间距 */
+}

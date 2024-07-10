@@ -1,0 +1,41 @@
+<!-- index.wxml -->
+<view class="search-bar">
+  <image src="/image/icon/search.png" class="search-icon" />
+  <input class="search-input" type="text" placeholder="想喝点什么?" bindinput="inputChange" />
+</view>
+
+<swiper class="swiper" autoplay indicator-dots="true" indicator-active-color="#ADD8E6" indicator-color="#FFFFE0">
+  <swiper-item class="swiper-item">
+    <image src="/image/drink1.png" class="swiper-image"></image>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image src="/image/drink2.png" class="swiper-image"></image>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <image src="/image/drink3.png" class="swiper-image"></image>
+  </swiper-item>
+</swiper>
+
+<view class="content">
+  <view class="head">
+  </view>
+  <view class="list">
+    <template name="listBar">
+      <block wx:for="{{test}}" wx:key="index">
+        <view class="sees">
+          <image src="{{item.img}}" style="width:75px;height:58px;"></image>
+          <view class="desc">
+            <view class="title">{{item.title}}</view>
+            <view class="count">
+              <view>{{item.type}}</view>
+              <view class="look">{{item.look}}</view>
+              <view class="say">{{item.say}}</view>
+            </view>
+          </view>
+          <button class="select-button" data-index="{{index}}" bindtap="onButtonTap">选择</button>
+        </view>
+      </block>
+    </template>
+    <template is="listBar" data="{{test}}"></template>
+  </view>
+</view>

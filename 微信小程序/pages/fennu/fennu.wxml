@@ -1,0 +1,32 @@
+<!--pages/fennu/fennu.wxml-->
+
+
+<!--pages/index/index.wxml-->
+<view class="container">
+
+<text class="title">为您推荐的是 <text class="highlight">干马天尼</text></text>
+<image src="/image/drink1.png" class="image" />
+<text class="description">配料有：</text>
+<view class="ingredient">
+  <image src="/image/icon/bubble.jpg" class="check-icon" />
+  <text>气泡水 20ml</text>
+</view>
+<view class="ingredient">
+  <image src="/image/icon/sugar.jpg" class="check-icon" />
+  <text>糖浆 20ml</text>
+</view>
+<view class="ingredient">
+  <image src="/image/icon/tequila.jpg" class="check-icon" />
+  <text>龙舌兰 20ml</text>
+</view>
+<view class="ingredient">
+  <image src="/image/icon/brandy.jpg" class="check-icon" />
+  <text>白兰地 20ml</text>
+</view>
+<view>
+  <navigator url="../xuanhao/xuanhao" open-type="navigate"> 
+  <button class="btn kaishi">开始调制</button>
+</navigator>
+</view>
+</view>
+

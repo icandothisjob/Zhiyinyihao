@@ -1,0 +1,12 @@
+<!--pages/admin/admin.wxml-->
+<!-- pages/Huawei_IOT/Huawei_IOT.wxml -->
+<view class="container">
+  <text class="title">状态获取：</text>
+  <text class="result">{{result}}</text>
+  <button type="primary" bindtap="touchBtn_gettoken" class="button">获取token</button>
+  <button type="default" bindtap="touchBtn_getshadow" class="button">获取设备状态</button>
+  <button type="default" bindtap="touchBtn_setCommand" class="button">舵机命令下发</button>
+  <button type="warn" bindtap="touchBtn_setCommandA" class="button">酒品A</button>
+  <button type="warn" bindtap="touchBtn_setCommandB" class="button">酒品B</button>
+  <button type="warn" bindtap="touchBtn_setCommandC" class="button">酒品C</button>
+</view>

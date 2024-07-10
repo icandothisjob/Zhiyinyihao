@@ -1,0 +1,9 @@
+<!--pages/xuanhao/xuanhao.wxml-->
+<text class="instruction">请放置您的杯子</text>
+
+
+
+
+<navigator url="../tiaozhi/tiaozhi" open-type="navigate">
+  <button class="btn">我放好了</button>
+</navigator>

@@ -1,0 +1,22 @@
+/* pages/xuanhao/xuanhao.wxss */
+.instruction{
+  text-align: center;
+  margin-top: 100rpx;
+}
+
+
+.btn {
+  width: 400rpx; /* 调整button的宽度 */
+  height: 100rpx; /* 调整button的高度 */
+  margin-top: 300rpx; /* 调整button的位置 */
+  background-color: #00CD00; /* 将按钮颜色改为绿色 */
+  color: #FFFFFF; /* 设置文字颜色为白色 */
+
+}
+
+/* pages/xuanhao/xuanhao.wxss */
+.instruction {
+  text-align: center;
+  display: block;
+  width: 100%; /* 确保text元素宽度为100%，这样text-align才能正常工作 */
+}

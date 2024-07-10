@@ -1,0 +1,30 @@
+/* pages/shoudong/shoudong.wxss */
+
+/* pages/new/new.wxss */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.btn {
+  width: 800rpx;
+  height: 110rpx;
+  font-size: 45rpx;
+  margin-bottom: 1rpx;
+}
+
+.kaixin-btn {
+  background-color: #FFD700;
+}
+
+.fennu-btn {
+  background-color: #87CEFA;
+}

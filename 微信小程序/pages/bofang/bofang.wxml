@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    音乐播放器
+  </view>
+  <view class="button-container">
+    <button class="control-button" bindtap="onPrevTap">
+      <image src="/image/prev.png" class="icon" />
+    </button>
+    <button class="control-button" bindtap="onPlayPauseTap">
+      <image src="{{isPlaying ? '/image/pause.png' : '/image/play.png'}}" class="icon" />
+    </button>
+    <button class="control-button" bindtap="onNextTap">
+      <image src="/image/next.png" class="icon" />
+    </button>
+  </view>
+</view>

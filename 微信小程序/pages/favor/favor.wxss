@@ -1,0 +1,133 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 使用视窗高度确保填满屏幕 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-box {
+  z-index: 1;
+  width: 70%; /* 调整宽度 */
+  height: 33vh; /* 调整高度为视窗高度的1/3 */
+  padding: 20px; /* 调整内边距 */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明背景 */
+  color: white; /* 文字颜色为白色 */
+  outline: none; /* 移除点击时的轮廓线 */
+  transition: all 0.3s ease; /* 平滑过渡效果 */
+  border: 2px solid #fff; /* 白色边框，2px宽 */
+  margin: 10px 0; /* 添加一些间距 */
+  position: absolute;
+  top: 2%; /* 上移2% */
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 使子元素之间有空隙 */
+  align-items: center;
+  text-align: center; /* 水平居中对齐 */
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  width: 100%; /* 确保输入框和按钮可以横向排列 */
+  justify-content: center; /* 水平居中 */
+  margin-top: auto; /* 将元素推到容器底部 */
+}
+
+.input-row input {
+  flex: 1; /* 让输入框占据剩余空间 */
+  padding: 10px; /* 添加内边距 */
+  margin-right: 10px; /* 增加右边距调整与按钮的距离 */
+  font-size: 16px; /* 调整字体大小 */
+  font-weight: bold; /* 加粗字体 */
+  border: 3px solid #f2f3ef; /* 绿色边框，3px宽 */
+  background-color: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
+  border-radius: 5px; /* 圆角边框 */
+  outline: none; /* 移除点击时的轮廓线 */
+  transition: all 0.3s ease; /* 平滑过渡效果 */
+}
+
+.confirm-button {
+  padding: 6px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(225, 228, 209); 
+  color: rgb(14, 1, 1); /* 文字颜色为白色 */
+  outline: none; /* 移除点击时的轮廓线 */
+  transition: all 0.3s ease; /* 平滑过渡效果 */
+  border: 2px solid #fff; /* 白色边框，2px宽 */
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.center-button {
+  z-index: 1;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: beige;
+  color: black;
+  outline: none; /* 移除点击时的轮廓线 */
+  transition: all 0.3s ease; /* 平滑过渡效果 */
+  border: 2px solid #fff; /* 白色边框，2px宽 */
+  margin: 30px 0; /* 按钮之间添加一些间距 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-button:active {
+  background-color: transparent; /* 用户点击时按钮背景色变暗 */
+  border-color: #ccac00; /* 用户点击时边框颜色变化 */
+}
+
+.bottom-buttons {
+  position: absolute;
+  bottom: 20px; /* 距离页面底部的间距 */
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* 横向排列按钮并均匀分布 */
+}
+
+.round-button {
+  width: 50px; /* 按钮的宽度 */
+  height: 50px; /* 按钮的高度 */
+  border-radius: 50%; /* 圆形按钮 */
+  background-color: beige;
+  border: 2px solid #fff; /* 白色边框，2px宽 */
+  color: black;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* 添加点击动画效果 */
+}
+
+.round-button:active {
+  transform: scale(0.9); /* 点击时缩小 */
+  background-color: transparent; /* 用户点击时按钮背景色变暗 */
+  border-color: #ccac00; /* 用户点击时边框颜色变化 */
+}
+
+.temp-canvas {
+  width: 400px; /* 画布宽度 */
+  height: 100px; /* 画布高度 */
+  margin-top: 10px; /* 与实时温度文字之间的间距 */
+}

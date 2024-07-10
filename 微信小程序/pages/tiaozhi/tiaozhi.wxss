@@ -1,0 +1,53 @@
+/* pages/tiaozhi/tiaozhi.wxss */
+.container {
+  padding: 20px;
+}
+
+.progress-text {
+  text-align: center;  /* 水平居中文本 */
+  width: 100%;        /* 确保text标签宽度占满容器宽度 */
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.progress-box {
+  text-align: center; /* 将progress-box内的内容居中显示 */
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center; /* 图标居中 */
+  margin: 20px 0;        /* 距离上下内容一些间隔 */
+}
+
+.satisfaction-box {
+  text-align: center; /* 将satisfaction-box内的内容居中显示 */
+  margin-top: 40px; /* 调整satisfaction-box在页面中的位置 */
+  padding: 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.satisfaction-checkbox-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.issue-checkbox-group {
+  margin-top: 20px;
+}
+
+.issue-checkbox-group text {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.checkbox-group label {
+  margin-right: 20px;
+}
+
+.text {
+  text-align: center; /* 将文本内容居中显示 */
+}

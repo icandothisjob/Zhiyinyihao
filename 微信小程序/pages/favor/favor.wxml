@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="center-box">
+    <text>{{statusText}} {{currentTemperature}}</text>
+    <canvas canvas-id="tempCanvas" class="temp-canvas"></canvas>
+    <view class="input-row">
+      <input type="number" placeholder="请输入期望温度" bindinput="onDesiredTempInput" />
+      <button class="confirm-button" bindtap="onConfirmTap">确定</button>
+    </view>
+  </view>
+  <view class="bottom-buttons">
+    <button class="round-button" bindtap="onButtonATap">A</button>
+    <button class="round-button" bindtap="onButtonBTap">B</button>
+  </view>
+  <image src="/image/one.jpg" class="background-image" mode="aspectFill"></image>
+  <button class="center-button" bindtap="onBeginTap">开始智饮之旅</button>
+  <navigator url="../bofang/bofang" open-type="navigate">
+    <button class="center-button" style="top: 65%;">播放音乐</button>
+  </navigator>
+</view>

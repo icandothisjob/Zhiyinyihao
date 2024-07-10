@@ -1,0 +1,18 @@
+<!-- pages/zidong/zidong.wxml -->
+
+<text>{{progressText}}</text>
+
+<view class="progress-box">
+  <progress percent="100" color="#10AEFF" active stroke-width="3" bind:activeend="onProgressEnd" />
+</view>
+
+<view class="icon-box">
+  <icon type="waiting" size="40" wx:if="{{progressText === '为您分析推荐的饮品中'}}" />
+  <icon type="success" size="40" wx:if="{{progressText === '分析完毕'}}" />
+</view>
+
+<text class="text-line" wx:if="{{progressText === '分析完毕'}}">为您推荐的饮品如下，请放置杯子</text>
+
+<navigator url="../tiaozhi/tiaozhi" open-type="navigate" wx:if="{{progressText === '分析完毕'}}">
+  <button class="btn">我放好了</button>
+</navigator>

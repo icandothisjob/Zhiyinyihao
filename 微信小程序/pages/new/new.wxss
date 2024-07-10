@@ -1,0 +1,28 @@
+/* pages/new/new.wxss */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 50rpx;
+  margin-bottom: 20rpx;
+}
+
+.btn {
+  width: 500rpx;
+  height: 100rpx;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.shoudong-btn {
+  background-color: #FFD700;
+}
+
+.zidong-btn {
+  background-color: #87CEFA;
+}

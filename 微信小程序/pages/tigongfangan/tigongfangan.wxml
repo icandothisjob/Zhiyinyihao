@@ -1,0 +1,35 @@
+<view class="content">
+  <view class="head">
+  </view>
+  <view class="list">
+    <template name="listBar">
+      <block wx:for="{{test}}" wx:key="test">
+        <view class="item_block">
+          <view class="sees">
+            <view class="img-checkbox-container">
+              <image src="{{item.img}}" style="width:75px;height:58px;"></image>
+              <checkbox class="custom-checkbox" value="{{item.checked}}" bindchange="checkboxChange"></checkbox>
+            </view>
+            <view class="desc">
+              <view class="title">{{item.title}}</view>
+              <view class="count">
+                <view>{{item.type}}</view>
+                <view class="look">{{item.look}}</view>
+                <view class="say">{{item.say}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="slider_container">
+            <slider name="slider" show-value></slider>
+            <view class="ml_label">ml</view>
+          </view>
+        </view>
+      </block>
+    </template>
+    <template is="listBar" data="{{test}}"></template>
+  </view>
+</view>
+
+<navigator url="../xuanhao/xuanhao" open-type="navigate">
+  <button class="btn">选好了</button>
+</navigator>

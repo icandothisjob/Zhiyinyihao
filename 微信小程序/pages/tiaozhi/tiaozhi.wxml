@@ -1,0 +1,40 @@
+<!-- pages/tiaozhi/tiaozhi.wxml -->
+<view class="container">
+  <text class="progress-text">{{progressText}}</text>
+
+  <view class="progress-box">
+    <progress percent="100" color="#10AEFF" active stroke-width="3" bind:activeend="onProgressEnd" />
+  </view>
+
+  <view class="icon-container">
+    <icon type="waiting" size="40" wx:if="{{progressText === '为您调酒中'}}" />
+    <icon type="success" size="40" wx:if="{{progressText === '调酒完毕'}}" />
+  </view>
+
+  <view class="satisfaction-box" wx:if="{{progressText === '调酒完毕'}}">
+    <text>您对本次服务是否满意？</text>
+    <checkbox-group class="satisfaction-checkbox-group" bindchange="onSatisfactionChange">
+      <label><checkbox value="satisfied" />满意</label>
+      <label><checkbox value="unsatisfied" />不满意</label>
+    </checkbox-group>
+    <text wx:if="{{satisfaction === 'satisfied'}}">感谢您的支持</text>
+    <text wx:if="{{satisfaction === 'unsatisfied'}}">请问哪里有问题？</text>
+    <view wx:if="{{satisfaction === 'unsatisfied'}}">
+      <checkbox-group class="issue-checkbox-group" bindchange="onIssueChange">
+        <text>酒精度：</text>
+        <label><checkbox value="highAlcohol" />太高</label>
+        <label><checkbox value="lowAlcohol" />太低</label>
+      </checkbox-group>
+      <checkbox-group class="issue-checkbox-group" bindchange="onIssueChange">
+        <text>气泡：</text>
+        <label><checkbox value="fewBubbles" />太少</label>
+        <label><checkbox value="manyBubbles" />太多</label>
+      </checkbox-group>
+      <checkbox-group class="issue-checkbox-group" bindchange="onIssueChange">
+        <text>糖浆：</text>
+        <label><checkbox value="lessSyrup" />太少</label>
+        <label><checkbox value="moreSyrup" />太多</label>
+      </checkbox-group>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/drink/drink",
+    "pages/favor/favor",
+    "pages/new/new",
+    "pages/shoudong/shoudong",
+    "pages/zidong/zidong",
+    "pages/zijitiaojiu/zijitiaojiu",
+    "pages/tigongfangan/tigongfangan",
+    "pages/xuanhao/xuanhao",
+    "pages/tiaozhi/tiaozhi",
+    "pages/kaixin/kaixin",
+    "pages/beishang/beishang",
+    "pages/fennu/fennu",
+    "pages/admin/admin",
+    "pages/bofang",
+    "pages/bofang/bofang"
+  ],
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#FF5F15",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/drink/drink",
+        "iconPath": "image/icon/drink.jpg",
+        "selectedIconPath": "image/icon/reversew.jpg",
+        "text": "畅饮无限"
+      },
+      {
+        "pagePath": "pages/favor/favor",
+        "iconPath": "image/icon/favor.jpg",
+        "selectedIconPath": "image/icon/inversee.jpg",
+        "text": "智饮世界"
+      },
+      {
+        "pagePath": "pages/tigongfangan/tigongfangan",
+        "iconPath": "image/icon/favor.jpg",
+        "selectedIconPath": "image/icon/inversee.jpg",
+        "text": "自助调酒"
+      }
+    ]
+  },
+  "requiredPrivateInfos": [
+    "chooseAddress"
+  ],
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

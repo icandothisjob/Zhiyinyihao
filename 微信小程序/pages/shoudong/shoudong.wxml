@@ -1,0 +1,18 @@
+<view class="container">
+  <text class="title">您的情绪是：</text>
+
+  <navigator url="../kaixin/kaixin" open-type="navigate"> 
+    <button class="btn kaixin">开心</button>
+  </navigator>
+
+  <navigator url="../fennu/fennu" open-type="navigate"> 
+    <button class="btn fennu">愤怒</button>
+  </navigator>
+
+  <navigator url="../beishang/beishang" open-type="navigate"> 
+    <button class="btn beishang">悲伤</button>
+  </navigator>
+</view>
+
+
+

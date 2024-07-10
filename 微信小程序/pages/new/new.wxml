@@ -1,0 +1,12 @@
+<!--pages/new/new.wxml-->
+<view class="container">
+  <text class="title">选择推荐方式：</text>
+
+  <navigator url="../shoudong/shoudong" open-type="navigate"> 
+    <button class="btn shoudong-btn">手动输入心情</button>
+  </navigator>
+
+  <navigator url="../zidong/zidong" open-type="navigate"> 
+    <button class="btn zidong-btn">自动识别心情</button>
+  </navigator>
+</view>
